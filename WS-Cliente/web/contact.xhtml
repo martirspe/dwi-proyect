@@ -1,0 +1,29 @@
+<ui:composition
+    template="/WEB-INF/template/layout.xhtml"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    xmlns:b="http://bootsfaces.net/ui">
+
+    <ui:param name="title" value="Contacto" />
+    <ui:define name="content">
+        <b:container style="margin-top: 50px;">
+            <h1>¿Como podemos ayudarte?</h1>
+            <hr></hr>
+            <!--Nombres,Correo,Celular,Mensaje,asunto,direccion-->
+            <b:form horizontal="true">
+                <b:inputText label="Nombres" colXs="8" labelColXs="4" colSm="10"  labelColSm="2" required="true"/>
+                <b:inputText label="Correo" mask="email" colXs="8" labelColXs="4" colSm="10"  labelColSm="2" required="true"/>
+                <b:inputText label="Celular" mask="999-999-999" colXs="8" labelColXs="4" colSm="10"  labelColSm="2" required="true"/>
+                <b:inputText label="Dirección" colXs="8" labelColXs="4" colSm="10"  labelColSm="2" required="true"/>
+                <b:inputText label="Asunto" colXs="8" labelColXs="4" colSm="10"  labelColSm="2" required="true"/>
+                <b:inputTextarea label="Mensaje" label-style="text-align: left;" colXs="12" labelColXs="12" required="true"/>
+                <hr></hr>
+
+                <p style="text-align: center">
+                    <b:commandButton value="ENVIAR" look="info"/>
+                </p>
+            </b:form>
+        </b:container>
+    </ui:define>
+</ui:composition>

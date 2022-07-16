@@ -1,0 +1,18 @@
+<ui:composition
+    template="/WEB-INF/template/layout.xhtml"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    xmlns:b="http://bootsfaces.net/ui">
+    <ui:param name="title" value="Inicio" />
+    <ui:define name="content">
+        <b:container style="margin-top: 50px;">
+            <b:jumbotron>
+                <h1>Bienvenido a INFOCOM</h1>
+                <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                <p><b:link value="Más información" outcome="/about" class="btn btn-primary btn-lg"/></p>
+            </b:jumbotron>
+            
+        </b:container>     
+    </ui:define>
+</ui:composition>

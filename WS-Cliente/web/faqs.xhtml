@@ -1,0 +1,29 @@
+<ui:composition
+    template="/WEB-INF/template/layout.xhtml"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    xmlns:b="http://bootsfaces.net/ui"
+    xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <ui:param name="title" value="Preguntas Frecuentes" />
+    <ui:define name="content">
+        <b:container style="margin-top: 50px; ">
+            <h1>Preguntas Frecuentes</h1>
+            <p style="margin-bottom: 50px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <b:accordion expanded-panels="panel1">
+                <b:panel id="panel1" title="¿Por qué comprar en INFOCOM?">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </b:panel>
+                <b:panel id="panel2" title="¿Hacen envíos a nivel nacional?">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </b:panel>
+                <b:panel id="panel3" title="¿Que medios de pago cuentan?">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </b:panel>
+                <b:panel id="panel4" title="¿Las devoluciones tienen costo?">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </b:panel>
+            </b:accordion>             
+        </b:container>
+    </ui:define>
+</ui:composition>

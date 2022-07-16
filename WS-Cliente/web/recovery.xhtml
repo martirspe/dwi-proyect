@@ -1,0 +1,26 @@
+<ui:composition
+    template="/WEB-INF/template/layout.xhtml"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    xmlns:b="http://bootsfaces.net/ui"
+    xmlns:f="http://xmlns.jcp.org/jsf/core">    
+    <ui:param name="title" value="Recuperar Contraseña" />
+    <ui:define name="content">
+        <b:container style="margin-top: 90px;">
+            <h1 style="text-align: center">#{texto.recovery}</h1>
+            <p style="margin-bottom: 50px; text-align: center">Por favor ingrese su e-mail y recibirá un correo con el enlace para actualizar su contraseña".</p>  
+            <b:form horizontal="true">
+                <b:inputText label="Correo electrónico" mask="email" colXs="8" labelColXs="4" colSm="10"  labelColSm="2" required="true">
+                    <f:facet name="append">
+                        <b:icon name="user" />
+                    </f:facet>
+                </b:inputText>
+                <p style="text-align: center">
+                    <b:commandButton value="Enviar" look="warning"/>
+                </p>
+            </b:form>
+        </b:container>
+    </ui:define>
+</ui:composition>
+

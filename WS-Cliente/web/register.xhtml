@@ -1,0 +1,28 @@
+<ui:composition
+    template="/WEB-INF/template/layout.xhtml"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    xmlns:b="http://bootsfaces.net/ui"
+    xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:param name="title" value="Registrarse" />
+    <ui:define name="content">
+        <b:container style="margin-top: 90px;">
+            <h1 style="text-align: center">#{texto.register}</h1>
+            <p style="margin-bottom: 50px; text-align: center">Crea una cuenta en INFOCOM S.A.C</p>
+
+            <b:form horizontal="false">
+                <b:inputText label="Nombres" colXs="8" labelColXs="4" colSm="10"  labelColSm="2" required="true"/>
+                <b:inputText label="Celular" mask="999-999-999" colXs="8" labelColXs="4" colSm="10"  labelColSm="2" required="true"/>
+                <b:inputText label="Correo" mask="email" colXs="8" labelColXs="4" colSm="10"  labelColSm="2" required="true"/>
+                <b:inputText label="Contraseña" colXs="8" labelColXs="4" colSm="10"  labelColSm="2" required="true"/>
+
+                <p style="text-align: center; margin-top: 30px;">
+                    <b:commandButton value="Registrarse" look="danger"/>
+                </p>
+
+            </b:form>
+        </b:container>
+    </ui:define>
+</ui:composition>

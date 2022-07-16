@@ -1,0 +1,29 @@
+<ui:composition
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    xmlns:b="http://bootsfaces.net/ui"
+    xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <b:navBar brand="#{texto.home}" brandHref="#{request.contextPath}/" fixed="top" inverse="true">
+        <f:facet name="kebab">
+            <!--Modificar el ícono del menú responsivo-->
+            <span class="fa fa-navicon"></span>
+        </f:facet>
+        <!--Menus a la izquierda-->
+        <b:navbarLinks>
+            <b:navLink value="#{texto.about}" outcome="/about" icon-awesome="fa-users"/>
+            <b:navLink value="#{texto.products}" outcome="/products" icon-awesome="fa-cube"/>
+            <b:navLink value="#{texto.faqs}" outcome="/faqs" icon-awesome="fa-edit"/>
+            <b:navLink value="#{texto.contact}" outcome="/contact" icon-awesome="fa-comments"/>
+        </b:navbarLinks>
+        <!--Menus a la derecha-->
+        <b:navbarLinks pull="right">
+            <!--Alinear icono: icon-align="right"-->
+            <b:dropMenu value="#{texto.myaccount}" icon-awesome="fa-user">
+                <b:navLink value="#{texto.login}" outcome="/login" icon-awesome="fa-user"/>
+                <b:navLink value="#{texto.register}" outcome="/register" icon-awesome="fa-database"/>
+            </b:dropMenu>
+        </b:navbarLinks>
+    </b:navBar>
+    <hr/>
+</ui:composition>

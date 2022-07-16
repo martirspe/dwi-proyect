@@ -1,0 +1,53 @@
+<ui:composition
+    template="/WEB-INF/template/layout.xhtml"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://xmlns.jcp.org/jsf/html"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    xmlns:b="http://bootsfaces.net/ui"
+    xmlns:f="http://xmlns.jcp.org/jsf/core">    
+    <ui:param name="title" value="Productos" />
+    <ui:define name="content">
+        <b:container style="margin-top: 90px; margin-bottom: 90px;">
+            <h1 style="text-align: center">#{texto.products}</h1>
+            <p style="margin-bottom: 50px; text-align: center">Lista de productos destacados.</p>  
+            <b:row>
+                <b:column col-sm="6" col-md="4">
+                    <b:thumbnail>
+                        <img src="https://home.ripley.com.pe/Attachment/WOP_5/2004284813088/2004284813088-1.jpg" alt="Producto 1"/>
+                        <f:facet name="caption">
+                            <h3>Producto 1</h3>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p>
+                                <b:button look="primary" value="Comprar Ahora"/>
+                            </p>
+                        </f:facet>
+                    </b:thumbnail>
+                </b:column>
+                <b:column col-sm="6" col-md="4">
+                    <b:thumbnail>
+                        <img src="https://home.ripley.com.pe/Attachment/WOP_5/2004284813088/2004284813088-1.jpg" alt="Producto 2"/>
+                        <f:facet name="caption">
+                            <h3>Producto 2</h3>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p>
+                                <b:button look="primary" value="Comprar Ahora"/>
+                            </p>
+                        </f:facet>
+                    </b:thumbnail>
+                </b:column>
+                <b:column col-sm="6" col-md="4">
+                    <b:thumbnail>
+                        <img src="https://home.ripley.com.pe/Attachment/WOP_5/2004284813088/2004284813088-1.jpg" alt="Producto 3"/>
+                        <f:facet name="caption">
+                            <h3>Producto 3</h3>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p>
+                                <b:button look="primary" value="Comprar Ahora"/>
+                            </p>
+                        </f:facet>
+                    </b:thumbnail>
+                </b:column>
+            </b:row>
+        </b:container>
+    </ui:define>
+</ui:composition>
